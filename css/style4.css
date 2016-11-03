@@ -1,0 +1,221 @@
+
+
+/*-------------------------------------------------------------------------------------------------------------panelsnap*/
+      
+      html, body {
+        color: #ffffff;
+
+        margin: 0;
+
+        padding: 0;
+        width: 100%;
+        font-family: "Bau", helvetica, Arial, sans-serif;
+        font-weight: 500;
+
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      html {
+        background-color: #000000;
+        height: 300vh; 
+      }
+
+      body {
+        background-color: transparent;
+        transition: opacity 0.4s;
+      }
+
+      body.fade-out {
+        opacity: 0;
+      }
+
+      p, h1, h2, h3, h4, h5, h6, a, input, ul, ol, span, form {
+        cursor: default;
+      }
+
+      p {
+        color: inherit;
+        font-size: 15pt;
+      }
+
+      a {
+        text-decoration: underline;
+        color: inherit;
+      }
+
+      a:focus, a:hover, a:visited {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      ::-webkit-scrollbar { 
+        display: none; 
+      }
+      
+      ::selection {
+        background-color: transparent;
+      }
+
+      input {
+        background-color: transparent;
+        border: 2px solid #ffffff;
+        display: block;
+        width: 100%;
+        margin-bottom: 12px; 
+        padding: 6px;
+      }
+
+      input:focus {
+        outline: none;
+      }
+
+      ::-webkit-input-placeholder {
+         color: #ffffff;
+      }
+
+      :-moz-placeholder { /* Firefox 18- */
+         color: #ffffff;  
+      }
+
+      ::-moz-placeholder {  /* Firefox 19+ */
+         color: #ffffff;  
+      }
+
+      :-ms-input-placeholder {  
+         color: #ffffff;  
+      }
+
+      .about {
+        width: 80vw;
+        max-width: 600px;
+      }
+
+      .backbutton {
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        font-size: 45px;
+        font-family: helvetica;
+        line-height: 0;
+      }
+
+      .backbutton a {
+        text-decoration: none;
+      }
+
+      .landing-content-holder {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        overflow: hidden;
+        margin: 0;
+        top: 0;
+        left: 0;
+        background-color: #0b1b57;
+        z-index: 1;
+      }
+
+      .landing-content {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        top: 0;
+        left: 0;
+        transition: opacity 1.1s;
+      }
+
+      .landing-page-text {
+        font-family: "Bau-bold", helvetica, Arial, sans-serif; 
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 1em;
+        font-size: 11vmin;
+        letter-spacing: -0.011em;
+        transition: font-size 0.4s, line-height 0.4s;
+        color: inherit;
+      }
+
+      .no-underline-link {
+        text-decoration: none;
+        transition: opacity 0.2s;
+      }
+
+      .no-underline-link:hover {
+        text-decoration: none;
+        opacity: 0.4;
+      }
+
+      .information-content-holder {
+        width: 100vw;
+        min-height: 100vh;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #000000;
+        z-index: 0;
+        padding: 10px 20px;
+        font-family: "bau-regular", helvetica, Arial, sans-serif;
+        font-weight: normal;
+        font-size: 21px;
+      }
+
+      .information-content-holder p {
+        font-weight: inherit;
+        font-size: inherit;
+      }
+
+      .information-content-text {
+      }
+
+      .info-heading {
+        text-transform: uppercase;
+        font-weight: inherit;
+        font-size: inherit;
+      }
+
+      .info-column {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+
+      @media (max-width: 992px) {
+        .content-2 { 
+          align-items: flex-start; padding: 40px 0; 
+        }
+        .info-column {
+          padding-left: 12px;
+          padding-right: 12px;
+        }
+      }
+
+      .homepage-text-hover {
+        opacity: 0.4;
+        transition: opacity 0.4s;
+      }
+
+      .homepage-text-hover:hover {
+        opacity: 1;
+      }
+
+      @media (max-width: 1023px) {
+        .homepage-text-hover {
+          display: none;
+        }
+      }
+
+      .spacer-vertical {
+        width: 100%;
+        height: 50px;
+      }

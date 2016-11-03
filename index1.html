@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8"> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<meta name="description" content="Agency for cultural brands">
+		<meta name="keywords" content="Tate, Tate Modern, V&A, Victoria and Albert Museum, Visit London, Art, Museum, Ben Weaver, General Assembly, Selfridges, China">
+		<title>Ben Weaver</title>
+
+		<link rel="stylesheet" href="css/normalize.css" type="text/css">
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+		<link rel="stylesheet" href="css/style1.css" type="text/css">
+		<link rel="stylesheet" href="fonts/stylesheet.css" type="text/css">
+		<link rel="shortcut icon" href="img/favicon.png">
+
+		<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+		<script type="text/javascript" src="js/lib/modernizr.custom.min.js"></script>
+	</head>
+
+	<body>
+		<script>document.body.className += ' fade-out';</script>
+
+
+		<div class="landing-content-holder">
+			<div>
+				<p class="landing-page-text">
+					Ben&nbsp;Weaver<br>
+					strategic &<br>
+					creative<br>
+					counsel<br>
+					For&nbsp;cultural<br>
+					brands<br>
+					<span class="homepage-text-hover">Collaborations</span><br>
+					<span class="homepage-text-hover">Credentials</span>
+				</p>
+			</div>
+		</div>
+
+		<div class="information-content-holder">
+			<div class="container-fluid info-container">
+				<div class="row">
+					<div class="col-md-3 info-column">
+						<h2 class="info-heading">Contact</h2>
+					</div>
+					<div class="col-md-6 info-column">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2 class="info-heading">About</h2>
+								<div class="spacer-vertical"></div>
+								<p>
+									A London based strategic and creative agency
+									established in 1998. We work with culturally
+									programmed organizations, visionary brands and
+									creative businesses.
+								</p>
+								<p>
+									Our clients include museums, galleries, retailers,
+									consumer brands, broadcasters, public bodies
+									and creative studios. We develop brand strategies,
+									cultural programs, art projects, curated experiences
+									and communication campaigns. 
+								</p>
+							</div>
+						</div>
+						<div class="spacer-vertical"></div>
+						<div class="row">
+							<div class="col-xs-12">
+								<h2 class="info-heading">Connect</h2>
+								<div class="spacer-vertical"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 info-column">
+						<h2 class="info-heading">Collaborations</h2>
+						<div class="spacer-vertical"></div>
+						<ul>
+							<li>Architectural Association</li>
+							<li>Åbäke</li>
+							<li>Absolut</li>
+							<li>Aesop</li>
+							<li>Africa 05</li>
+							<li>Afrofuture</li>
+							<li>Agenda</li>
+							<li>Agent Provocateur</li>
+							<li>Alexander Mcqueen</li>
+							<li>Amitabh Bachchan</li>
+							<li>AMO</li>
+							<li>Andreas Gursky</li>
+							<li>Anish Kapoor</li>
+							<li>Anya Gallacio</li>
+							<li>Architecture Foundation</li>
+							<li>ARCA</li>
+							<li>Art Deco</li>
+							<li>Art of Bloomsbury</li>
+							<li>Arts Council</li>
+							<li>Asahi</li>
+							<li>Assuming Positions</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<script type="text/javascript">
+		$( document ).ready(function() {
+	    $('body').removeClass('fade-out');
+		});
+
+		$(window).scroll(function() {
+			vph = $(window).innerHeight();
+			vpw = $(window).innerWidth();
+			scrolled = $(this).scrollTop();
+			if ($(this).scrollTop() >= vph) {
+				$('.information-content-holder').css('position', 'absolute');
+				$('.information-content-holder').css('z-index', '2');
+				$('html').css({'height': vph+(scrolled/2) +'px'});
+			} else {
+				$('.information-content-holder').css('position', 'fixed');
+				$('.information-content-holder').css('z-index', '-1');
+				$('html').css('height', '200vh');
+			}
+		});
+
+		</script>
+	</body>
+
+</html>

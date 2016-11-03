@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Ben Weaver" 
+AuthUserFile /srv/data/web/vhosts/miscellaneoustechnical.xyz/.htpasswd 
+require valid-user

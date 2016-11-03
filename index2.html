@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8"> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<meta name="description" content="Agency for cultural brands">
+		<meta name="keywords" content="Tate, Tate Modern, V&A, Victoria and Albert Museum, Visit London, Art, Museum, Ben Weaver, General Assembly, Selfridges, China">
+		<title>Ben Weaver</title>
+
+		<link rel="stylesheet" href="css/normalize.css" type="text/css">
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+		<link rel="stylesheet" href="css/style2.css" type="text/css">
+		<link rel="stylesheet" href="fonts/stylesheet.css" type="text/css">
+		<link rel="shortcut icon" href="img/favicon.png">
+
+		<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+		<script type="text/javascript" src="js/lib/modernizr.custom.min.js"></script>
+	</head>
+	<style type="text/css">
+	</style>
+	<body><!-- 
+		<script>
+
+			$(window).on('beforeunload', function(){
+			  $(window).scrollTop(0);
+			});
+
+		</script> -->
+
+
+		<div class="landing-content-holder">
+			<div class="landing-content">
+				<div>
+					<p class="landing-page-text">
+						Ben&nbsp;Weaver<br>
+						strategic &<br>
+						creative<br>
+						counsel<br>
+						For&nbsp;cultural<br>
+						brands<br>
+						<span class="homepage-text-hover">Collaborations</span><br>
+						<span class="homepage-text-hover">Credentials</span>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="information-content-holder">
+			<div class="container-fluid info-container">
+				<div class="row">
+					<div class="col-md-3 info-column">
+						<h2 class="info-heading information-content-text">Contact</h2>
+					</div>
+					<div class="col-md-6 info-column">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2 class="info-heading information-content-text">About</h2>
+								<div class="spacer-vertical"></div>
+								<p class="information-content-text">
+									A London based strategic and creative agency
+									established in 1998. We work with culturally
+									programmed organizations, visionary brands and
+									creative businesses.
+								</p>
+								<p class="information-content-text">
+									Our clients include museums, galleries, retailers,
+									consumer brands, broadcasters, public bodies
+									and creative studios. We develop brand strategies,
+									cultural programs, art projects, curated experiences
+									and communication campaigns. 
+								</p>
+							</div>
+						</div>
+						<div class="spacer-vertical"></div>
+						<div class="row">
+							<div class="col-xs-12" id="div">
+								<h2 class="info-heading information-content-text">Connect</h2>
+								<div class="spacer-vertical"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 info-column">
+						<h2 class="info-heading information-content-text">Collaborations</h2>
+						<div class="spacer-vertical"></div>
+						<ul class=" information-content-text">
+							<li>Architectural Association</li>
+							<li>Åbäke</li>
+							<li>Absolut</li>
+							<li>Aesop</li>
+							<li>Africa 05</li>
+							<li>Afrofuture</li>
+							<li>Agenda</li>
+							<li>Agent Provocateur</li>
+							<li>Alexander Mcqueen</li>
+							<li>Amitabh Bachchan</li>
+							<li>AMO</li>
+							<li>Andreas Gursky</li>
+							<li>Anish Kapoor</li>
+							<li>Anya Gallacio</li>
+							<li>Architecture Foundation</li>
+							<li>ARCA</li>
+							<li>Art Deco</li>
+							<li>Art of Bloomsbury</li>
+							<li>Arts Council</li>
+							<li>Asahi</li>
+							<li>Assuming Positions</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<script src="js/jquery.fittext.js"></script>
+		<script>
+		</script>
+
+		<script type="text/javascript">
+		$(document).ready(function(){
+			vph = $(window).innerHeight();
+			vpw = $(window).innerWidth();
+			$('html').css({'height': vph + $( ".information-content-holder" ).height() + 60 + 'px'});
+		  if (vpw <= vph) {
+		   	if (vpw > vph*0.5) {
+			  	$('.landing-page-text').css({'font-size': ((vph+vpw)/33)+'px'});
+			  } else {
+			  	$('.landing-page-text').css({'font-size': '9vmin'});
+			  }
+		  } else {
+		   	if (vph > vpw*0.5) {
+			  	$('.landing-page-text').css({'font-size': ((vpw+vph)/24)+'px'});
+			  } else {
+			  	$('.landing-page-text').css({'font-size': '9vmin'});
+			  }
+		  } 
+		});
+
+		$(window).resize(function() {
+			vph = $(window).innerHeight();
+			vpw = $(window).innerWidth();
+			$('html').css({'height': vph + $( ".information-content-holder" ).height() + 60 + 'px'});
+		  if (vpw <= vph) {
+		   	if (vpw > vph*0.5) {
+			  	$('.landing-page-text').css({'font-size': ((vph+vpw)/33)+'px'});
+			  } else {
+			  	$('.landing-page-text').css({'font-size': '9vmin'});
+			  }
+		  } else {
+		   	if (vph > vpw*0.5) {
+			  	$('.landing-page-text').css({'font-size': ((vpw+vph)/24)+'px'});
+			  } else {
+			  	$('.landing-page-text').css({'font-size': '9vmin'});
+			  }
+		  } 
+		});
+
+		$(window).scroll(function() {
+			vph = ($(window).innerHeight());
+			vpw = $(window).innerWidth();
+			var $div = $("#div");
+			var divBottom = $div.offset().top + parseInt($div.height());
+	    var screenBottom = $(this).scrollTop() + parseInt($(window).height());
+			scrolled = $(window).scrollTop();
+			if ($(this).scrollTop() < vph) {
+				$('.landing-content-holder').css({'top': '-'+scrolled+'px'});
+				$('.information-content-holder').css({'top': '0'});
+				$('.information-content-holder').css({'position': 'fixed'});
+				$('.landing-content-holder').css({'background-color': '#0b1b57' });
+				$('.landing-content-holder').css({'opacity': '1' });
+		  } else {
+				$('.information-content-holder').css({'top': (vph)-scrolled+'px'});
+				$('.landing-content-holder').css({'opacity': '0' });
+				$('html').css({'height': vph + $( ".information-content-holder" ).height() + 60 + 'px'});
+			}
+			// if ($(window).scrollTop() > vph/2) {
+			// 	$('.information-content-text').css({'opacity': '1' });
+			// } else {
+				// $('.information-content-text').css({'opacity': vph-(vph/ });
+			// }
+		});
+
+		</script>
+	</body>
+
+</html>
